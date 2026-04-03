@@ -1,0 +1,102 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  color: #111;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+h2 {
+  margin-top: 2rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.4rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+input[type='range'] {
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+  font-family: inherit;
+  font-size: 1rem;
+  resize: vertical;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.25rem;
+  margin-top: 1rem;
+  background: #fafafa;
+}
+
+.controls {
+  margin-top: 0.75rem;
+}
+
+.stat {
+  color: #555;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+.line-list {
+  margin: 0.5rem 0 0;
+  padding-left: 1.5rem;
+  font-size: 0.875rem;
+}
+
+.line-list li {
+  font-family: monospace;
+}
+
+.line-list .line-width {
+  color: #888;
+}
+
+.pretext-box {
+  border: 2px dashed #ccc;
+  border-radius: 4px;
+  padding: 0.5rem;
+  background: white;
+  margin-top: 0.75rem;
+  min-height: 2rem;
+}
+
+/* Alternating line highlights to visualise pretext line breaks */
+.line-span {
+  display: block;
+  background: rgba(99, 102, 241, 0.06);
+}
+
+.line-span:nth-child(odd) {
+  background: rgba(99, 102, 241, 0.12);
+}
+
+footer {
+  margin-top: 3rem;
+  font-size: 0.8rem;
+  color: #888;
+}
