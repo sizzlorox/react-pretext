@@ -8,7 +8,7 @@ export default defineConfig({
   resolve: {
     alias: {
       // Import directly from source so the demo always reflects latest code
-      'react-pretext': path.resolve(__dirname, '../src/index.ts'),
+      '@sizzlorox/react-pretext': path.resolve(__dirname, '../src/index.ts'),
     },
   },
 })

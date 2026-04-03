@@ -11,7 +11,7 @@ Pretext measures and lays out multiline text using pure arithmetic, avoiding the
 ## Install
 
 ```sh
-npm install react-pretext @chenglou/pretext
+npm install @sizzlorox/react-pretext @chenglou/pretext
 ```
 
 Requires React 18+.
@@ -19,7 +19,7 @@ Requires React 18+.
 ## Quick start
 
 ```tsx
-import { PretextText } from 'react-pretext'
+import { PretextText } from '@sizzlorox/react-pretext'
 
 function App() {
   return (
@@ -36,7 +36,7 @@ function App() {
 Or with the hooks directly:
 
 ```tsx
-import { usePretext } from 'react-pretext'
+import { usePretext } from '@sizzlorox/react-pretext'
 
 function MyText({ text, maxWidth }: { text: string; maxWidth: number }) {
   const result = usePretext(text, {
@@ -136,7 +136,7 @@ usePretextLines(prepared: PreparedTextWithSegments | null, maxWidth: number, lin
 **Example — virtualized list:**
 
 ```tsx
-import { usePreparedText, usePretextLayout } from 'react-pretext'
+import { usePreparedText, usePretextLayout } from '@sizzlorox/react-pretext'
 
 function ListItem({ text, font, containerWidth }: Props) {
   // Memoized: re-runs only when text or font changes
@@ -152,7 +152,7 @@ function ListItem({ text, font, containerWidth }: Props) {
 **Example — custom rendering per line:**
 
 ```tsx
-import { usePreparedTextWithSegments, usePretextLines } from 'react-pretext'
+import { usePreparedTextWithSegments, usePretextLines } from '@sizzlorox/react-pretext'
 
 function HighlightedText({ text, font, width, lineHeight, searchTerm }: Props) {
   const prepared = usePreparedTextWithSegments(text, font)
@@ -199,8 +199,8 @@ Re-exported from `@chenglou/pretext` for advanced use cases where you need to la
 Lays out a single line starting at `cursor`, constrained to `maxWidth`. Returns the line's text and an updated cursor pointing to the next character, or `null` when the text is exhausted.
 
 ```ts
-import { layoutNextLine } from 'react-pretext'
-import type { LayoutCursor } from 'react-pretext'
+import { layoutNextLine } from '@sizzlorox/react-pretext'
+import type { LayoutCursor } from '@sizzlorox/react-pretext'
 
 let cursor: LayoutCursor = { segmentIndex: 0, graphemeIndex: 0 }
 
@@ -224,7 +224,7 @@ Iterates over grapheme ranges within a single line, calling `callback` for each 
 Re-exported from `@chenglou/pretext`:
 
 ```ts
-import { clearCache, setLocale } from 'react-pretext'
+import { clearCache, setLocale } from '@sizzlorox/react-pretext'
 
 setLocale('ja-JP') // Affects word-break rules for CJK, Arabic, etc.
 clearCache()       // Release measurement caches (e.g. after locale change)

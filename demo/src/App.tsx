@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react'
-import { usePretext, usePretextContainerWidth, PretextText } from 'react-pretext'
+import { usePretext, usePretextContainerWidth, PretextText } from '@sizzlorox/react-pretext'
 import { BallsDemo } from './BallsDemo'
 
 const DEFAULT_TEXT =

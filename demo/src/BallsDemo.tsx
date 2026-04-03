@@ -15,8 +15,8 @@ import {
   usePreparedTextWithSegments,
   usePretextContainerWidth,
   layoutNextLine,
-} from "react-pretext";
-import type { PreparedTextWithSegments, LayoutCursor } from "react-pretext";
+} from "@sizzlorox/react-pretext";
+import type { PreparedTextWithSegments, LayoutCursor } from "@sizzlorox/react-pretext";
 
 // ---------------------------------------------------------------------------
 // Config
