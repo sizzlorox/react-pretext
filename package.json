@@ -1,6 +1,6 @@
 {
   "name": "@sizzlorox/react-pretext",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "React hooks and components for @chenglou/pretext — high-performance text measurement and layout without DOM reflows",
   "license": "MIT",
   "type": "module",

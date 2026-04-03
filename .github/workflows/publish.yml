@@ -19,6 +19,7 @@ jobs:
           registry-url: https://registry.npmjs.org
           cache: npm
 
+      - run: npm install -g npm@latest
       - run: npm install
       - run: npm run typecheck
       - run: npm test
